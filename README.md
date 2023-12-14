@@ -18,4 +18,4 @@ In a web application, routes are what we type into the browser to go to differen
             return "<h1>Hello World!</h1>"
 
 <a name="2"></a>
-## if __name__ == '__main__'
+## **if __name__ == '__main__'**
