@@ -18,7 +18,7 @@ In a web application, routes are what we type into the browser to go to differen
             return "<h1>Hello World!</h1>"
 
 <a name="2"></a>
-## **if __name__ == '__main__'**
+## if __name__ == '__main__'
 
 This construct in Python is used to check whether the Python script is being run as **the main program or if it is being imported as a module into another script**. Here's how it works:
 
