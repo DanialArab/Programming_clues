@@ -2,11 +2,12 @@
 
 1. [Decorators](#1)
 2. [if __name__ == '__main__'](#2)
+3. [Double asterisk](#3) 
 
  
 
 <a name="1"></a>
-## Decorators
+## Decorators 
 
 In a web application, routes are what we type into the browser to go to different pages. We create these using route decorators. Decorators are a way to add additional functionality to  existing functions. In our case, the app.route decorator below handles all the complicated backend stuff and simply allows us to write a function that returns the information that will be shown on the website for this specific route. 
 
@@ -27,4 +28,23 @@ When a Python script is executed, **a special built-in variable called __name__ 
 So, the if __name__ == '__main__': block allows you to write code that will only be executed when the script is run directly, not when it's imported as a module.
 
 good link: https://www.youtube.com/watch?v=sugvnHA7ElY
+
+<a name="3"></a>
+## Double asterisk
+
+In Python double asterisk converts a dictionary into a named argument. 
+
+      def my_func (name, email, phone):
+          return f"{name} with email {email} has phone {phone}"
+      
+      my_func('Danial', 'dan@gmail.com', 1234)
+      'Danial with email dan@gmail.com has phone 1234'
+      
+      my_func(name='Danial', email='dan@gmail.com', phone=1234)
+      'Danial with email dan@gmail.com has phone 1234'
+      
+      data = {'name': 'Danial', 'email': 'dan@gmail.com', 'phone': 1234}
+      my_func(**data)
+      'Danial with email dan@gmail.com has phone 1234'
+
 
